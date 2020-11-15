@@ -16,6 +16,9 @@ namespace GradeBook.GradeBooks
             if (Students.Count < 5)
                 throw new InvalidOperationException();
 
+            if (averageGrade > 20)
+                return 'A';
+
             return 'F';
         }
     }
